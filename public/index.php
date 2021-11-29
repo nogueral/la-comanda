@@ -33,7 +33,7 @@ $app->addRoutingMiddleware();
 $app->addBodyParsingMiddleware();
 $errorMiddleware = $app->addErrorMiddleware(true, true, true);
 
-$app->get('/', function (Request $request, Response $response, $args) {
+$app->get('[/]', function (Request $request, Response $response, $args) {
     $response->getBody()->write("TP La Comanda");
     return $response;
 });
