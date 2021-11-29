@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "e15ae030-7dfb-42ec-b79d-064a855e8449",
+		"_postman_id": "0cc49407-7aa9-43fb-ae9a-e1085a7c8f1f",
 		"name": "La-Comanda-Heroku",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -38,11 +38,12 @@
 				},
 				"url": {
 					"raw": "https://noguera-la-comanda.herokuapp.com/public/mesas",
-					"protocol": "http",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"noguera-la-comanda",
+						"herokuapp",
+						"com"
 					],
-					"port": "666",
 					"path": [
 						"public",
 						"mesas"
@@ -99,11 +100,12 @@
 				},
 				"url": {
 					"raw": "https://noguera-la-comanda.herokuapp.com/public/pedidos",
-					"protocol": "http",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"noguera-la-comanda",
+						"herokuapp",
+						"com"
 					],
-					"port": "666",
 					"path": [
 						"public",
 						"pedidos"
@@ -160,11 +162,12 @@
 				},
 				"url": {
 					"raw": "https://noguera-la-comanda.herokuapp.com/public/pedidos",
-					"protocol": "http",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"noguera-la-comanda",
+						"herokuapp",
+						"com"
 					],
-					"port": "666",
 					"path": [
 						"public",
 						"pedidos"
@@ -221,11 +224,12 @@
 				},
 				"url": {
 					"raw": "https://noguera-la-comanda.herokuapp.com/public/pedidos",
-					"protocol": "http",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"noguera-la-comanda",
+						"herokuapp",
+						"com"
 					],
-					"port": "666",
 					"path": [
 						"public",
 						"pedidos"
@@ -282,11 +286,12 @@
 				},
 				"url": {
 					"raw": "https://noguera-la-comanda.herokuapp.com/public/pedidos",
-					"protocol": "http",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"noguera-la-comanda",
+						"herokuapp",
+						"com"
 					],
-					"port": "666",
 					"path": [
 						"public",
 						"pedidos"
@@ -308,11 +313,12 @@
 				],
 				"url": {
 					"raw": "https://noguera-la-comanda.herokuapp.com/public/empleados/cocinero",
-					"protocol": "http",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"noguera-la-comanda",
+						"herokuapp",
+						"com"
 					],
-					"port": "666",
 					"path": [
 						"public",
 						"empleados",
@@ -355,11 +361,12 @@
 				},
 				"url": {
 					"raw": "https://noguera-la-comanda.herokuapp.com/public/empleados/enpreparacion",
-					"protocol": "http",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"noguera-la-comanda",
+						"herokuapp",
+						"com"
 					],
-					"port": "666",
 					"path": [
 						"public",
 						"empleados",
@@ -402,11 +409,12 @@
 				},
 				"url": {
 					"raw": "https://noguera-la-comanda.herokuapp.com/public/empleados/enpreparacion",
-					"protocol": "http",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"noguera-la-comanda",
+						"herokuapp",
+						"com"
 					],
-					"port": "666",
 					"path": [
 						"public",
 						"empleados",
@@ -429,11 +437,12 @@
 				],
 				"url": {
 					"raw": "https://noguera-la-comanda.herokuapp.com/public/empleados/cervecero",
-					"protocol": "http",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"noguera-la-comanda",
+						"herokuapp",
+						"com"
 					],
-					"port": "666",
 					"path": [
 						"public",
 						"empleados",
@@ -476,11 +485,12 @@
 				},
 				"url": {
 					"raw": "https://noguera-la-comanda.herokuapp.com/public/empleados/enpreparacion",
-					"protocol": "http",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"noguera-la-comanda",
+						"herokuapp",
+						"com"
 					],
-					"port": "666",
 					"path": [
 						"public",
 						"empleados",
@@ -503,11 +513,12 @@
 				],
 				"url": {
 					"raw": "https://noguera-la-comanda.herokuapp.com/public/empleados/bartender",
-					"protocol": "http",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"noguera-la-comanda",
+						"herokuapp",
+						"com"
 					],
-					"port": "666",
 					"path": [
 						"public",
 						"empleados",
@@ -550,11 +561,12 @@
 				},
 				"url": {
 					"raw": "https://noguera-la-comanda.herokuapp.com/public/empleados/enpreparacion",
-					"protocol": "http",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"noguera-la-comanda",
+						"herokuapp",
+						"com"
 					],
-					"port": "666",
 					"path": [
 						"public",
 						"empleados",
@@ -571,11 +583,12 @@
 				"header": [],
 				"url": {
 					"raw": "https://noguera-la-comanda.herokuapp.com/public/clientes/1",
-					"protocol": "http",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"noguera-la-comanda",
+						"herokuapp",
+						"com"
 					],
-					"port": "666",
 					"path": [
 						"public",
 						"clientes",
@@ -598,11 +611,12 @@
 				],
 				"url": {
 					"raw": "https://noguera-la-comanda.herokuapp.com/public/pedidos/",
-					"protocol": "http",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"noguera-la-comanda",
+						"herokuapp",
+						"com"
 					],
-					"port": "666",
 					"path": [
 						"public",
 						"pedidos",
@@ -646,11 +660,12 @@
 				},
 				"url": {
 					"raw": "https://noguera-la-comanda.herokuapp.com/public/empleados/pedidolisto",
-					"protocol": "http",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"noguera-la-comanda",
+						"herokuapp",
+						"com"
 					],
-					"port": "666",
 					"path": [
 						"public",
 						"empleados",
@@ -694,11 +709,12 @@
 				},
 				"url": {
 					"raw": "https://noguera-la-comanda.herokuapp.com/public/empleados/pedidolisto",
-					"protocol": "http",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"noguera-la-comanda",
+						"herokuapp",
+						"com"
 					],
-					"port": "666",
 					"path": [
 						"public",
 						"empleados",
@@ -709,7 +725,7 @@
 			"response": []
 		},
 		{
-			"name": "4 - bartender cambia sus pedidos a listo para servir (daikiri)",
+			"name": "6 - bartender cambia sus pedidos a listo para servir (daikiri)",
 			"request": {
 				"method": "PUT",
 				"header": [
@@ -742,11 +758,12 @@
 				},
 				"url": {
 					"raw": "https://noguera-la-comanda.herokuapp.com/public/empleados/pedidolisto",
-					"protocol": "http",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"noguera-la-comanda",
+						"herokuapp",
+						"com"
 					],
-					"port": "666",
 					"path": [
 						"public",
 						"empleados",
@@ -790,11 +807,12 @@
 				},
 				"url": {
 					"raw": "https://noguera-la-comanda.herokuapp.com/public/empleados/pedidolisto",
-					"protocol": "http",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"noguera-la-comanda",
+						"herokuapp",
+						"com"
 					],
-					"port": "666",
 					"path": [
 						"public",
 						"empleados",
@@ -830,11 +848,12 @@
 				},
 				"url": {
 					"raw": "https://noguera-la-comanda.herokuapp.com/public/pedidos/estado",
-					"protocol": "http",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"noguera-la-comanda",
+						"herokuapp",
+						"com"
 					],
-					"port": "666",
 					"path": [
 						"public",
 						"pedidos",
@@ -872,11 +891,12 @@
 				},
 				"url": {
 					"raw": "https://noguera-la-comanda.herokuapp.com/public/pedidos/entregado",
-					"protocol": "http",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"noguera-la-comanda",
+						"herokuapp",
+						"com"
 					],
-					"port": "666",
 					"path": [
 						"public",
 						"pedidos",
@@ -914,11 +934,12 @@
 				},
 				"url": {
 					"raw": "https://noguera-la-comanda.herokuapp.com/public/pedidos/entregado",
-					"protocol": "http",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"noguera-la-comanda",
+						"herokuapp",
+						"com"
 					],
-					"port": "666",
 					"path": [
 						"public",
 						"pedidos",
@@ -956,11 +977,12 @@
 				},
 				"url": {
 					"raw": "https://noguera-la-comanda.herokuapp.com/public/pedidos/entregado",
-					"protocol": "http",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"noguera-la-comanda",
+						"herokuapp",
+						"com"
 					],
-					"port": "666",
 					"path": [
 						"public",
 						"pedidos",
@@ -998,11 +1020,12 @@
 				},
 				"url": {
 					"raw": "https://noguera-la-comanda.herokuapp.com/public/pedidos/entregado",
-					"protocol": "http",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"noguera-la-comanda",
+						"herokuapp",
+						"com"
 					],
-					"port": "666",
 					"path": [
 						"public",
 						"pedidos",
@@ -1050,11 +1073,12 @@
 				},
 				"url": {
 					"raw": "https://noguera-la-comanda.herokuapp.com/public/mesas",
-					"protocol": "http",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"noguera-la-comanda",
+						"herokuapp",
+						"com"
 					],
-					"port": "666",
 					"path": [
 						"public",
 						"mesas"
@@ -1076,11 +1100,12 @@
 				],
 				"url": {
 					"raw": "https://noguera-la-comanda.herokuapp.com/public/mesas/",
-					"protocol": "http",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"noguera-la-comanda",
+						"herokuapp",
+						"com"
 					],
-					"port": "666",
 					"path": [
 						"public",
 						"mesas",
@@ -1131,11 +1156,12 @@
 				},
 				"url": {
 					"raw": "https://noguera-la-comanda.herokuapp.com/public/pedidos/cobrado",
-					"protocol": "http",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"noguera-la-comanda",
+						"herokuapp",
+						"com"
 					],
-					"port": "666",
 					"path": [
 						"public",
 						"pedidos",
@@ -1178,11 +1204,12 @@
 				},
 				"url": {
 					"raw": "https://noguera-la-comanda.herokuapp.com/public/mesas",
-					"protocol": "http",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"noguera-la-comanda",
+						"herokuapp",
+						"com"
 					],
-					"port": "666",
 					"path": [
 						"public",
 						"mesas"
@@ -1224,11 +1251,12 @@
 				},
 				"url": {
 					"raw": "https://noguera-la-comanda.herokuapp.com/public/mesas/cerrar",
-					"protocol": "http",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"noguera-la-comanda",
+						"herokuapp",
+						"com"
 					],
-					"port": "666",
 					"path": [
 						"public",
 						"mesas",
@@ -1280,11 +1308,12 @@
 				},
 				"url": {
 					"raw": "https://noguera-la-comanda.herokuapp.com/public/clientes/carga",
-					"protocol": "http",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"noguera-la-comanda",
+						"herokuapp",
+						"com"
 					],
-					"port": "666",
 					"path": [
 						"public",
 						"clientes",
@@ -1301,22 +1330,59 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2Mzc5ODIwMzYsImV4cCI6MTYzODA0MjAzNiwiYXVkIjoiNDhmYWJjNmQ3MGQwNjVkNzYwYWRlODcxYzI2MDY4NDRmMjZjYzFhMyIsImRhdGEiOnsidXN1YXJpbyI6IkxlYW5kcm8iLCJjbGF2ZSI6IiQyeSQxMCRqOXlheUZlUE9cLzNSOVhMdmtNWmxxT2tQLkgyUlYxeWNTbXI5OTNVeFkzeFJsVVhCNy54VmUiLCJwZXJmaWwiOiJhZG1pbmlzdHJhZG9yIn0sImFwcCI6IkxhIENvbWFuZGEifQ._5zej-4AZn8bkjwxaEHxkSJ8whKg-BLLe_IrdcRNfss",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzgxODkwMjksImV4cCI6MTYzODI0OTAyOSwiYXVkIjoiYjBlMWQ3M2M4NGY1OTkzMDUzNjgwMjI3OTQ0NTYyNWI2OTk4M2MyZCIsImRhdGEiOnsidXN1YXJpbyI6Imxub2d1ZXJhIiwiY2xhdmUiOiIkMnkkMTAkajl5YXlGZVBPXC8zUjlYTHZrTVpscU9rUC5IMlJWMXljU21yOTkzVXhZM3hSbFVYQjcueFZlIiwicGVyZmlsIjoiYWRtaW5pc3RyYWRvciJ9LCJhcHAiOiJMYSBDb21hbmRhIn0.7fumF0OCeOa4wUMS5fEfr46K21KHsUhTi2vVMOE9Crc",
 						"type": "text"
 					}
 				],
 				"url": {
 					"raw": "https://noguera-la-comanda.herokuapp.com/public/socios/encuestas/mejorescomentarios",
-					"protocol": "http",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"noguera-la-comanda",
+						"herokuapp",
+						"com"
 					],
-					"port": "666",
 					"path": [
 						"public",
 						"socios",
 						"encuestas",
 						"mejorescomentarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login-usuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "usuario",
+							"value": "jdiaz",
+							"type": "text"
+						},
+						{
+							"key": "clave",
+							"value": "1234",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://noguera-la-comanda.herokuapp.com/public/login",
+					"protocol": "https",
+					"host": [
+						"noguera-la-comanda",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"public",
+						"login"
 					]
 				}
 			},
