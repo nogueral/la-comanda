@@ -1,0 +1,1326 @@
+{
+	"info": {
+		"_postman_id": "e15ae030-7dfb-42ec-b79d-064a855e8449",
+		"name": "La-Comanda-Heroku",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "0 - Mozo cambia el estado de la mesa",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzgwMjc3NjQsImV4cCI6MTYzODA4Nzc2NCwiYXVkIjoiNDhmYWJjNmQ3MGQwNjVkNzYwYWRlODcxYzI2MDY4NDRmMjZjYzFhMyIsImRhdGEiOnsidXN1YXJpbyI6Ikp1YW4iLCJjbGF2ZSI6IiQyeSQxMCRqNVk3Z2FFM2NmY1AwTnNCZVwvSTgyT1JFbDJmTHNTeHZJbkNxWWpDa0NtQ2tSckh1cVlzT1ciLCJwZXJmaWwiOiJtb3pvIn0sImFwcCI6IkxhIENvbWFuZGEifQ.dD2KaN30Tmylz1PPKdaxWJXN6ZczTd2lMc_0OpSsgUA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "idMesa",
+							"value": "10005",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "estado",
+							"value": "con cliente esperando pedido",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://noguera-la-comanda.herokuapp.com/public/mesas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"public",
+						"mesas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "1 - mozo toma pedido: 2 hamburguesas de garbanzo",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzgwMjc3NjQsImV4cCI6MTYzODA4Nzc2NCwiYXVkIjoiNDhmYWJjNmQ3MGQwNjVkNzYwYWRlODcxYzI2MDY4NDRmMjZjYzFhMyIsImRhdGEiOnsidXN1YXJpbyI6Ikp1YW4iLCJjbGF2ZSI6IiQyeSQxMCRqNVk3Z2FFM2NmY1AwTnNCZVwvSTgyT1JFbDJmTHNTeHZJbkNxWWpDa0NtQ2tSckh1cVlzT1ciLCJwZXJmaWwiOiJtb3pvIn0sImFwcCI6IkxhIENvbWFuZGEifQ.dD2KaN30Tmylz1PPKdaxWJXN6ZczTd2lMc_0OpSsgUA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "idMesa",
+							"value": "10005",
+							"type": "text"
+						},
+						{
+							"key": "idProducto",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "cantidad",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "perfil",
+							"value": "cocinero",
+							"type": "text"
+						},
+						{
+							"key": "cliente",
+							"value": "juan perez",
+							"type": "text"
+						},
+						{
+							"key": "foto",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "https://noguera-la-comanda.herokuapp.com/public/pedidos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"public",
+						"pedidos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "1 - mozo toma pedido: 1 corona",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzgwMjc3NjQsImV4cCI6MTYzODA4Nzc2NCwiYXVkIjoiNDhmYWJjNmQ3MGQwNjVkNzYwYWRlODcxYzI2MDY4NDRmMjZjYzFhMyIsImRhdGEiOnsidXN1YXJpbyI6Ikp1YW4iLCJjbGF2ZSI6IiQyeSQxMCRqNVk3Z2FFM2NmY1AwTnNCZVwvSTgyT1JFbDJmTHNTeHZJbkNxWWpDa0NtQ2tSckh1cVlzT1ciLCJwZXJmaWwiOiJtb3pvIn0sImFwcCI6IkxhIENvbWFuZGEifQ.dD2KaN30Tmylz1PPKdaxWJXN6ZczTd2lMc_0OpSsgUA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "idMesa",
+							"value": "10005",
+							"type": "text"
+						},
+						{
+							"key": "idProducto",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "cantidad",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "perfil",
+							"value": "cervecero",
+							"type": "text"
+						},
+						{
+							"key": "cliente",
+							"value": "juan perez",
+							"type": "text"
+						},
+						{
+							"key": "foto",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "https://noguera-la-comanda.herokuapp.com/public/pedidos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"public",
+						"pedidos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "1 - mozo toma pedido: 1 daikiri",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzgwMjc3NjQsImV4cCI6MTYzODA4Nzc2NCwiYXVkIjoiNDhmYWJjNmQ3MGQwNjVkNzYwYWRlODcxYzI2MDY4NDRmMjZjYzFhMyIsImRhdGEiOnsidXN1YXJpbyI6Ikp1YW4iLCJjbGF2ZSI6IiQyeSQxMCRqNVk3Z2FFM2NmY1AwTnNCZVwvSTgyT1JFbDJmTHNTeHZJbkNxWWpDa0NtQ2tSckh1cVlzT1ciLCJwZXJmaWwiOiJtb3pvIn0sImFwcCI6IkxhIENvbWFuZGEifQ.dD2KaN30Tmylz1PPKdaxWJXN6ZczTd2lMc_0OpSsgUA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "idMesa",
+							"value": "10005",
+							"type": "text"
+						},
+						{
+							"key": "idProducto",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "cantidad",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "perfil",
+							"value": "bartender",
+							"type": "text"
+						},
+						{
+							"key": "cliente",
+							"value": "juan perez",
+							"type": "text"
+						},
+						{
+							"key": "foto",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "https://noguera-la-comanda.herokuapp.com/public/pedidos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"public",
+						"pedidos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2 - mozo toma pedido: milanesa a caballo (carga foto)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzgwMjc3NjQsImV4cCI6MTYzODA4Nzc2NCwiYXVkIjoiNDhmYWJjNmQ3MGQwNjVkNzYwYWRlODcxYzI2MDY4NDRmMjZjYzFhMyIsImRhdGEiOnsidXN1YXJpbyI6Ikp1YW4iLCJjbGF2ZSI6IiQyeSQxMCRqNVk3Z2FFM2NmY1AwTnNCZVwvSTgyT1JFbDJmTHNTeHZJbkNxWWpDa0NtQ2tSckh1cVlzT1ciLCJwZXJmaWwiOiJtb3pvIn0sImFwcCI6IkxhIENvbWFuZGEifQ.dD2KaN30Tmylz1PPKdaxWJXN6ZczTd2lMc_0OpSsgUA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "idMesa",
+							"value": "10005",
+							"type": "text"
+						},
+						{
+							"key": "idProducto",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "cantidad",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "perfil",
+							"value": "cocinero",
+							"type": "text"
+						},
+						{
+							"key": "cliente",
+							"value": "juan perez",
+							"type": "text"
+						},
+						{
+							"key": "foto",
+							"type": "file",
+							"src": "/C:/Users/nico/Desktop/epidata-ingreso/lnoguera-foto.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://noguera-la-comanda.herokuapp.com/public/pedidos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"public",
+						"pedidos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3 - empleado de cocina trae sus pedidos pendientes",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzgwMzQ3MzMsImV4cCI6MTYzODA5NDczMywiYXVkIjoiNDhmYWJjNmQ3MGQwNjVkNzYwYWRlODcxYzI2MDY4NDRmMjZjYzFhMyIsImRhdGEiOnsidXN1YXJpbyI6Im1sb3BleiIsImNsYXZlIjoiJDJ5JDEwJERVOC5ULkV1Ui5PUVwvWTJ0VjA3cEkuaXJNQkh2S2hhOVdwWWFWVnpQWFFRMzF0M1pxaXZrRyIsInBlcmZpbCI6ImNvY2luZXJvIn0sImFwcCI6IkxhIENvbWFuZGEifQ.DZ5UaM-NlVJBSUjajuCKsNv3tATpB2VBptULeftCYg0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://noguera-la-comanda.herokuapp.com/public/empleados/cocinero",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"public",
+						"empleados",
+						"cocinero"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3 - cocinero cambia sus pedidos a en preparacion (milanesa a caballo)",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzgwMzQ3MzMsImV4cCI6MTYzODA5NDczMywiYXVkIjoiNDhmYWJjNmQ3MGQwNjVkNzYwYWRlODcxYzI2MDY4NDRmMjZjYzFhMyIsImRhdGEiOnsidXN1YXJpbyI6Im1sb3BleiIsImNsYXZlIjoiJDJ5JDEwJERVOC5ULkV1Ui5PUVwvWTJ0VjA3cEkuaXJNQkh2S2hhOVdwWWFWVnpQWFFRMzF0M1pxaXZrRyIsInBlcmZpbCI6ImNvY2luZXJvIn0sImFwcCI6IkxhIENvbWFuZGEifQ.DZ5UaM-NlVJBSUjajuCKsNv3tATpB2VBptULeftCYg0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "tiempoEstimado",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "perfil",
+							"value": "cocinero",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://noguera-la-comanda.herokuapp.com/public/empleados/enpreparacion",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"public",
+						"empleados",
+						"enpreparacion"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3 - cocinero cambia sus pedidos a en preparacion (hamb garbanzo)",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzgwMzQ3MzMsImV4cCI6MTYzODA5NDczMywiYXVkIjoiNDhmYWJjNmQ3MGQwNjVkNzYwYWRlODcxYzI2MDY4NDRmMjZjYzFhMyIsImRhdGEiOnsidXN1YXJpbyI6Im1sb3BleiIsImNsYXZlIjoiJDJ5JDEwJERVOC5ULkV1Ui5PUVwvWTJ0VjA3cEkuaXJNQkh2S2hhOVdwWWFWVnpQWFFRMzF0M1pxaXZrRyIsInBlcmZpbCI6ImNvY2luZXJvIn0sImFwcCI6IkxhIENvbWFuZGEifQ.DZ5UaM-NlVJBSUjajuCKsNv3tATpB2VBptULeftCYg0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "tiempoEstimado",
+							"value": "15",
+							"type": "text"
+						},
+						{
+							"key": "perfil",
+							"value": "cocinero",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://noguera-la-comanda.herokuapp.com/public/empleados/enpreparacion",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"public",
+						"empleados",
+						"enpreparacion"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3 -cervecero trae sus pedidos pendientes",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzgwMzQ1ODQsImV4cCI6MTYzODA5NDU4NCwiYXVkIjoiNDhmYWJjNmQ3MGQwNjVkNzYwYWRlODcxYzI2MDY4NDRmMjZjYzFhMyIsImRhdGEiOnsidXN1YXJpbyI6IndmZXJuaWNvbGEiLCJjbGF2ZSI6IiQyeSQxMCRHSzRcL2EyLko3U3ZFLkhXcjNteFwvcS5OcDNsQS4wY285NUIyeWpxbEtDQkJFOU9yNEwybXh1IiwicGVyZmlsIjoiY2VydmVjZXJvIn0sImFwcCI6IkxhIENvbWFuZGEifQ.s67Y_W-seHJ5gYPg9y8kBn2KqsUoBbiuBPEVJwnX9pU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://noguera-la-comanda.herokuapp.com/public/empleados/cervecero",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"public",
+						"empleados",
+						"cervecero"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3 - cervecero cambia sus pedidos a en preparacion (corona)",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzgwMzQ1ODQsImV4cCI6MTYzODA5NDU4NCwiYXVkIjoiNDhmYWJjNmQ3MGQwNjVkNzYwYWRlODcxYzI2MDY4NDRmMjZjYzFhMyIsImRhdGEiOnsidXN1YXJpbyI6IndmZXJuaWNvbGEiLCJjbGF2ZSI6IiQyeSQxMCRHSzRcL2EyLko3U3ZFLkhXcjNteFwvcS5OcDNsQS4wY285NUIyeWpxbEtDQkJFOU9yNEwybXh1IiwicGVyZmlsIjoiY2VydmVjZXJvIn0sImFwcCI6IkxhIENvbWFuZGEifQ.s67Y_W-seHJ5gYPg9y8kBn2KqsUoBbiuBPEVJwnX9pU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "tiempoEstimado",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "perfil",
+							"value": "cervecero",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://noguera-la-comanda.herokuapp.com/public/empleados/enpreparacion",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"public",
+						"empleados",
+						"enpreparacion"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3 -bartender trae sus pedidos pendientes",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzgwMzQ3MTEsImV4cCI6MTYzODA5NDcxMSwiYXVkIjoiNDhmYWJjNmQ3MGQwNjVkNzYwYWRlODcxYzI2MDY4NDRmMjZjYzFhMyIsImRhdGEiOnsidXN1YXJpbyI6ImFuYXZhcnJvIiwiY2xhdmUiOiIkMnkkMTAkU1AuWTZFdGIwQ2M0UFwvR0o2WXRtYU8wQ2xZakhESWtPLm1Kd3BPbjF4TGIuTUpWRkQ3S1llIiwicGVyZmlsIjoiYmFydGVuZGVyIn0sImFwcCI6IkxhIENvbWFuZGEifQ.r5IPxa5SJV7SGCP2WTyTMNMfahSofInCJaP3WJiSbiw",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://noguera-la-comanda.herokuapp.com/public/empleados/bartender",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"public",
+						"empleados",
+						"bartender"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3 - bartender cambia sus pedidos a en preparacion (daikiri)",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzgwMzQ3MTEsImV4cCI6MTYzODA5NDcxMSwiYXVkIjoiNDhmYWJjNmQ3MGQwNjVkNzYwYWRlODcxYzI2MDY4NDRmMjZjYzFhMyIsImRhdGEiOnsidXN1YXJpbyI6ImFuYXZhcnJvIiwiY2xhdmUiOiIkMnkkMTAkU1AuWTZFdGIwQ2M0UFwvR0o2WXRtYU8wQ2xZakhESWtPLm1Kd3BPbjF4TGIuTUpWRkQ3S1llIiwicGVyZmlsIjoiYmFydGVuZGVyIn0sImFwcCI6IkxhIENvbWFuZGEifQ.r5IPxa5SJV7SGCP2WTyTMNMfahSofInCJaP3WJiSbiw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "tiempoEstimado",
+							"value": "15",
+							"type": "text"
+						},
+						{
+							"key": "perfil",
+							"value": "bartender",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://noguera-la-comanda.herokuapp.com/public/empleados/enpreparacion",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"public",
+						"empleados",
+						"enpreparacion"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4 - el cliente ingresa el id y ve el estado de su pedido",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://noguera-la-comanda.herokuapp.com/public/clientes/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"public",
+						"clientes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5 - Alguno de los socios pide el listado de pedidos con tiempo de demora",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzgwMzQ3NjYsImV4cCI6MTYzODA5NDc2NiwiYXVkIjoiNDhmYWJjNmQ3MGQwNjVkNzYwYWRlODcxYzI2MDY4NDRmMjZjYzFhMyIsImRhdGEiOnsidXN1YXJpbyI6ImpkaWF6IiwiY2xhdmUiOiIkMnkkMTAkajVZN2dhRTNjZmNQME5zQmVcL0k4Mk9SRWwyZkxzU3h2SW5DcVlqQ2tDbUNrUnJIdXFZc09XIiwicGVyZmlsIjoibW96byJ9LCJhcHAiOiJMYSBDb21hbmRhIn0.u_X4lehmH_SW4sJnelwp66_xw8H4d3N0nY7cuxR105Q",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://noguera-la-comanda.herokuapp.com/public/pedidos/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"public",
+						"pedidos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "6 - cocinero cambia sus pedidos a listo para servir (milanesa a caballo)",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzgwMzQ3MzMsImV4cCI6MTYzODA5NDczMywiYXVkIjoiNDhmYWJjNmQ3MGQwNjVkNzYwYWRlODcxYzI2MDY4NDRmMjZjYzFhMyIsImRhdGEiOnsidXN1YXJpbyI6Im1sb3BleiIsImNsYXZlIjoiJDJ5JDEwJERVOC5ULkV1Ui5PUVwvWTJ0VjA3cEkuaXJNQkh2S2hhOVdwWWFWVnpQWFFRMzF0M1pxaXZrRyIsInBlcmZpbCI6ImNvY2luZXJvIn0sImFwcCI6IkxhIENvbWFuZGEifQ.DZ5UaM-NlVJBSUjajuCKsNv3tATpB2VBptULeftCYg0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "tiempoEstimado",
+							"value": "20",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "perfil",
+							"value": "cocinero",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://noguera-la-comanda.herokuapp.com/public/empleados/pedidolisto",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"public",
+						"empleados",
+						"pedidolisto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "6 - cervecero cambia sus pedidos a listo para servir (corona)",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzgwMzQ1ODQsImV4cCI6MTYzODA5NDU4NCwiYXVkIjoiNDhmYWJjNmQ3MGQwNjVkNzYwYWRlODcxYzI2MDY4NDRmMjZjYzFhMyIsImRhdGEiOnsidXN1YXJpbyI6IndmZXJuaWNvbGEiLCJjbGF2ZSI6IiQyeSQxMCRHSzRcL2EyLko3U3ZFLkhXcjNteFwvcS5OcDNsQS4wY285NUIyeWpxbEtDQkJFOU9yNEwybXh1IiwicGVyZmlsIjoiY2VydmVjZXJvIn0sImFwcCI6IkxhIENvbWFuZGEifQ.s67Y_W-seHJ5gYPg9y8kBn2KqsUoBbiuBPEVJwnX9pU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "tiempoEstimado",
+							"value": "10",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "perfil",
+							"value": "cervecero",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://noguera-la-comanda.herokuapp.com/public/empleados/pedidolisto",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"public",
+						"empleados",
+						"pedidolisto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4 - bartender cambia sus pedidos a listo para servir (daikiri)",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzgwMzQ3MTEsImV4cCI6MTYzODA5NDcxMSwiYXVkIjoiNDhmYWJjNmQ3MGQwNjVkNzYwYWRlODcxYzI2MDY4NDRmMjZjYzFhMyIsImRhdGEiOnsidXN1YXJpbyI6ImFuYXZhcnJvIiwiY2xhdmUiOiIkMnkkMTAkU1AuWTZFdGIwQ2M0UFwvR0o2WXRtYU8wQ2xZakhESWtPLm1Kd3BPbjF4TGIuTUpWRkQ3S1llIiwicGVyZmlsIjoiYmFydGVuZGVyIn0sImFwcCI6IkxhIENvbWFuZGEifQ.r5IPxa5SJV7SGCP2WTyTMNMfahSofInCJaP3WJiSbiw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "tiempoEstimado",
+							"value": "15",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "perfil",
+							"value": "bartender",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://noguera-la-comanda.herokuapp.com/public/empleados/pedidolisto",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"public",
+						"empleados",
+						"pedidolisto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "6 - cocinero cambia sus pedidos a listo para servir (hamb de garbanzo)",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzgwMzQ3MzMsImV4cCI6MTYzODA5NDczMywiYXVkIjoiNDhmYWJjNmQ3MGQwNjVkNzYwYWRlODcxYzI2MDY4NDRmMjZjYzFhMyIsImRhdGEiOnsidXN1YXJpbyI6Im1sb3BleiIsImNsYXZlIjoiJDJ5JDEwJERVOC5ULkV1Ui5PUVwvWTJ0VjA3cEkuaXJNQkh2S2hhOVdwWWFWVnpQWFFRMzF0M1pxaXZrRyIsInBlcmZpbCI6ImNvY2luZXJvIn0sImFwcCI6IkxhIENvbWFuZGEifQ.DZ5UaM-NlVJBSUjajuCKsNv3tATpB2VBptULeftCYg0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "tiempoEstimado",
+							"value": "20",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "perfil",
+							"value": "cocinero",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://noguera-la-comanda.herokuapp.com/public/empleados/pedidolisto",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"public",
+						"empleados",
+						"pedidolisto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "7 - La moza se fija los pedidos que estan listos para servir",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzgwMzQ3NjYsImV4cCI6MTYzODA5NDc2NiwiYXVkIjoiNDhmYWJjNmQ3MGQwNjVkNzYwYWRlODcxYzI2MDY4NDRmMjZjYzFhMyIsImRhdGEiOnsidXN1YXJpbyI6ImpkaWF6IiwiY2xhdmUiOiIkMnkkMTAkajVZN2dhRTNjZmNQME5zQmVcL0k4Mk9SRWwyZkxzU3h2SW5DcVlqQ2tDbUNrUnJIdXFZc09XIiwicGVyZmlsIjoibW96byJ9LCJhcHAiOiJMYSBDb21hbmRhIn0.u_X4lehmH_SW4sJnelwp66_xw8H4d3N0nY7cuxR105Q",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "estado",
+							"value": "listo para servir",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://noguera-la-comanda.herokuapp.com/public/pedidos/estado",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"public",
+						"pedidos",
+						"estado"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "7 - La moza entrega pedido a la mesa (milanesa a caballo)",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzgwMzQ3NjYsImV4cCI6MTYzODA5NDc2NiwiYXVkIjoiNDhmYWJjNmQ3MGQwNjVkNzYwYWRlODcxYzI2MDY4NDRmMjZjYzFhMyIsImRhdGEiOnsidXN1YXJpbyI6ImpkaWF6IiwiY2xhdmUiOiIkMnkkMTAkajVZN2dhRTNjZmNQME5zQmVcL0k4Mk9SRWwyZkxzU3h2SW5DcVlqQ2tDbUNrUnJIdXFZc09XIiwicGVyZmlsIjoibW96byJ9LCJhcHAiOiJMYSBDb21hbmRhIn0.u_X4lehmH_SW4sJnelwp66_xw8H4d3N0nY7cuxR105Q",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "estado",
+							"value": "listo para servir",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://noguera-la-comanda.herokuapp.com/public/pedidos/entregado",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"public",
+						"pedidos",
+						"entregado"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "7 - La moza entrega pedido a la mesa (hamb de garbanzos)",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzgwMzQ3NjYsImV4cCI6MTYzODA5NDc2NiwiYXVkIjoiNDhmYWJjNmQ3MGQwNjVkNzYwYWRlODcxYzI2MDY4NDRmMjZjYzFhMyIsImRhdGEiOnsidXN1YXJpbyI6ImpkaWF6IiwiY2xhdmUiOiIkMnkkMTAkajVZN2dhRTNjZmNQME5zQmVcL0k4Mk9SRWwyZkxzU3h2SW5DcVlqQ2tDbUNrUnJIdXFZc09XIiwicGVyZmlsIjoibW96byJ9LCJhcHAiOiJMYSBDb21hbmRhIn0.u_X4lehmH_SW4sJnelwp66_xw8H4d3N0nY7cuxR105Q",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "estado",
+							"value": "listo para servir",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://noguera-la-comanda.herokuapp.com/public/pedidos/entregado",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"public",
+						"pedidos",
+						"entregado"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "7 - La moza entrega pedido a la mesa (corona)",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzgwMzQ3NjYsImV4cCI6MTYzODA5NDc2NiwiYXVkIjoiNDhmYWJjNmQ3MGQwNjVkNzYwYWRlODcxYzI2MDY4NDRmMjZjYzFhMyIsImRhdGEiOnsidXN1YXJpbyI6ImpkaWF6IiwiY2xhdmUiOiIkMnkkMTAkajVZN2dhRTNjZmNQME5zQmVcL0k4Mk9SRWwyZkxzU3h2SW5DcVlqQ2tDbUNrUnJIdXFZc09XIiwicGVyZmlsIjoibW96byJ9LCJhcHAiOiJMYSBDb21hbmRhIn0.u_X4lehmH_SW4sJnelwp66_xw8H4d3N0nY7cuxR105Q",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "estado",
+							"value": "listo para servir",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://noguera-la-comanda.herokuapp.com/public/pedidos/entregado",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"public",
+						"pedidos",
+						"entregado"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "7 - La moza entrega pedido a la mesa (daikiri)",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzgwMzQ3NjYsImV4cCI6MTYzODA5NDc2NiwiYXVkIjoiNDhmYWJjNmQ3MGQwNjVkNzYwYWRlODcxYzI2MDY4NDRmMjZjYzFhMyIsImRhdGEiOnsidXN1YXJpbyI6ImpkaWF6IiwiY2xhdmUiOiIkMnkkMTAkajVZN2dhRTNjZmNQME5zQmVcL0k4Mk9SRWwyZkxzU3h2SW5DcVlqQ2tDbUNrUnJIdXFZc09XIiwicGVyZmlsIjoibW96byJ9LCJhcHAiOiJMYSBDb21hbmRhIn0.u_X4lehmH_SW4sJnelwp66_xw8H4d3N0nY7cuxR105Q",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "estado",
+							"value": "listo para servir",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://noguera-la-comanda.herokuapp.com/public/pedidos/entregado",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"public",
+						"pedidos",
+						"entregado"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "7 - La moza cambia el estado de la mesa",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzgwMzQ3NjYsImV4cCI6MTYzODA5NDc2NiwiYXVkIjoiNDhmYWJjNmQ3MGQwNjVkNzYwYWRlODcxYzI2MDY4NDRmMjZjYzFhMyIsImRhdGEiOnsidXN1YXJpbyI6ImpkaWF6IiwiY2xhdmUiOiIkMnkkMTAkajVZN2dhRTNjZmNQME5zQmVcL0k4Mk9SRWwyZkxzU3h2SW5DcVlqQ2tDbUNrUnJIdXFZc09XIiwicGVyZmlsIjoibW96byJ9LCJhcHAiOiJMYSBDb21hbmRhIn0.u_X4lehmH_SW4sJnelwp66_xw8H4d3N0nY7cuxR105Q",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "estado",
+							"value": "listo para servir",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "idMesa",
+							"value": "10005",
+							"type": "text"
+						},
+						{
+							"key": "estado",
+							"value": "con cliente comiendo",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://noguera-la-comanda.herokuapp.com/public/mesas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"public",
+						"mesas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "8 - Alguno de los socios pide el listado de mesas con estados",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzgwMzQ3NjYsImV4cCI6MTYzODA5NDc2NiwiYXVkIjoiNDhmYWJjNmQ3MGQwNjVkNzYwYWRlODcxYzI2MDY4NDRmMjZjYzFhMyIsImRhdGEiOnsidXN1YXJpbyI6ImpkaWF6IiwiY2xhdmUiOiIkMnkkMTAkajVZN2dhRTNjZmNQME5zQmVcL0k4Mk9SRWwyZkxzU3h2SW5DcVlqQ2tDbUNrUnJIdXFZc09XIiwicGVyZmlsIjoibW96byJ9LCJhcHAiOiJMYSBDb21hbmRhIn0.u_X4lehmH_SW4sJnelwp66_xw8H4d3N0nY7cuxR105Q",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://noguera-la-comanda.herokuapp.com/public/mesas/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"public",
+						"mesas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "9 - La moza cobra la cuenta",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzgwMzQ3NjYsImV4cCI6MTYzODA5NDc2NiwiYXVkIjoiNDhmYWJjNmQ3MGQwNjVkNzYwYWRlODcxYzI2MDY4NDRmMjZjYzFhMyIsImRhdGEiOnsidXN1YXJpbyI6ImpkaWF6IiwiY2xhdmUiOiIkMnkkMTAkajVZN2dhRTNjZmNQME5zQmVcL0k4Mk9SRWwyZkxzU3h2SW5DcVlqQ2tDbUNrUnJIdXFZc09XIiwicGVyZmlsIjoibW96byJ9LCJhcHAiOiJMYSBDb21hbmRhIn0.u_X4lehmH_SW4sJnelwp66_xw8H4d3N0nY7cuxR105Q",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "estado",
+							"value": "listo para servir",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "id",
+							"value": "5",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "idMesa",
+							"value": "10005",
+							"type": "text"
+						},
+						{
+							"key": "estado",
+							"value": "con cliente comiendo",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "https://noguera-la-comanda.herokuapp.com/public/pedidos/cobrado",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"public",
+						"pedidos",
+						"cobrado"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "9 - Mozo cambia el estado de la mesa a con cliente pagando",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzgwMjc3NjQsImV4cCI6MTYzODA4Nzc2NCwiYXVkIjoiNDhmYWJjNmQ3MGQwNjVkNzYwYWRlODcxYzI2MDY4NDRmMjZjYzFhMyIsImRhdGEiOnsidXN1YXJpbyI6Ikp1YW4iLCJjbGF2ZSI6IiQyeSQxMCRqNVk3Z2FFM2NmY1AwTnNCZVwvSTgyT1JFbDJmTHNTeHZJbkNxWWpDa0NtQ2tSckh1cVlzT1ciLCJwZXJmaWwiOiJtb3pvIn0sImFwcCI6IkxhIENvbWFuZGEifQ.dD2KaN30Tmylz1PPKdaxWJXN6ZczTd2lMc_0OpSsgUA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "idMesa",
+							"value": "10005",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "estado",
+							"value": "con cliente pagando",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://noguera-la-comanda.herokuapp.com/public/mesas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"public",
+						"mesas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "10 - Alguno de los socios cierra la mesa",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2Mzc5ODIwMzYsImV4cCI6MTYzODA0MjAzNiwiYXVkIjoiNDhmYWJjNmQ3MGQwNjVkNzYwYWRlODcxYzI2MDY4NDRmMjZjYzFhMyIsImRhdGEiOnsidXN1YXJpbyI6IkxlYW5kcm8iLCJjbGF2ZSI6IiQyeSQxMCRqOXlheUZlUE9cLzNSOVhMdmtNWmxxT2tQLkgyUlYxeWNTbXI5OTNVeFkzeFJsVVhCNy54VmUiLCJwZXJmaWwiOiJhZG1pbmlzdHJhZG9yIn0sImFwcCI6IkxhIENvbWFuZGEifQ._5zej-4AZn8bkjwxaEHxkSJ8whKg-BLLe_IrdcRNfss",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "idMesa",
+							"value": "10005",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "estado",
+							"value": "cerrada",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://noguera-la-comanda.herokuapp.com/public/mesas/cerrar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"public",
+						"mesas",
+						"cerrar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "11 - cliente carga encuesta (pedido 1)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "idPedido",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "puntajeMesa",
+							"value": "8",
+							"type": "text"
+						},
+						{
+							"key": "puntajeRestaurant",
+							"value": "7",
+							"type": "text"
+						},
+						{
+							"key": "puntajeMozo",
+							"value": "9",
+							"type": "text"
+						},
+						{
+							"key": "puntajeCocinero",
+							"value": "9",
+							"type": "text"
+						},
+						{
+							"key": "comentarios",
+							"value": "Excelente plato",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://noguera-la-comanda.herokuapp.com/public/clientes/carga",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"public",
+						"clientes",
+						"carga"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "12 - Alguno de los socios pide los mejores comentarios",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2Mzc5ODIwMzYsImV4cCI6MTYzODA0MjAzNiwiYXVkIjoiNDhmYWJjNmQ3MGQwNjVkNzYwYWRlODcxYzI2MDY4NDRmMjZjYzFhMyIsImRhdGEiOnsidXN1YXJpbyI6IkxlYW5kcm8iLCJjbGF2ZSI6IiQyeSQxMCRqOXlheUZlUE9cLzNSOVhMdmtNWmxxT2tQLkgyUlYxeWNTbXI5OTNVeFkzeFJsVVhCNy54VmUiLCJwZXJmaWwiOiJhZG1pbmlzdHJhZG9yIn0sImFwcCI6IkxhIENvbWFuZGEifQ._5zej-4AZn8bkjwxaEHxkSJ8whKg-BLLe_IrdcRNfss",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://noguera-la-comanda.herokuapp.com/public/socios/encuestas/mejorescomentarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"public",
+						"socios",
+						"encuestas",
+						"mejorescomentarios"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
